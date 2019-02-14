@@ -1,0 +1,2 @@
+# myMiniGame
+wechat miniGame
