@@ -10,15 +10,15 @@
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
+  background-color: #FFF;
 }
 
 .userinfo-nickname {
-  color: rgb(93, 219, 241);
+  color: #aaa;
 }
 
 .usermotto {
-  margin-top: 200px;
-  color: rgb(252, 247, 247);
+  margin-top: 200rpx;
 }
 
 .content {

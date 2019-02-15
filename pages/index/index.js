@@ -59,6 +59,12 @@ Page({
     // }, 2000);
   },
 
+  onReady() {
+    // wx.createSelectorQuery().select('.userinfo-avatar').boundingClientRect((rect) => {
+    //   console.log('a --- ', rect);
+    // }).exec();
+  },
+
   getUserInfo: function(e) {
     console.log('---- ', e)
     app.globalData.userInfo = e.detail.userInfo
