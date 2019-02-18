@@ -7,7 +7,9 @@ Page({
     motto: '',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    animationData: null,
+    className: null
   },
   //事件处理函数
   bindViewTap: function() {
@@ -52,11 +54,28 @@ Page({
   },
   
   onShow() {
+    this.setData({
+      className: 'userinfo-avatar avatar'
+    });
     // setTimeout(() => {
     //   wx.navigateTo({
     //     url: '../logs/logs',
     //   })
     // }, 2000);
+  
+    // const animation = wx.createAnimation({
+    //   duration: 1000,
+    //   timingFunction: 'ease',
+    // })
+
+    // this.animation = animation
+
+    // setTimeout(() => {
+    //   animation.scale(0.7, 0.7).translate(-200, -140).step();
+    //   this.setData({
+    //     animationData: animation.export()
+    //   })
+    // }, 1500);
   },
 
   onReady() {
